@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Tyler Cirone, IS117-005, Fall 2019 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Page</title>
+    <link rel="shortcut icon" href="BroncosLogo.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ContactCSS.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="BroncosLogo.jpg" alt="Broncos Logo" height="75px"></a>
+    <h1>Complete Broncos</h1>
+    <h2>A complete guide to the Broncos world</h2>
+    <nav id="mobile_menu" class="col-12"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ContactPage.html" class="current">Contact Page</a></li>
+            <li><a href="TeamOutlook.html">Current Team Outlook</a></li>
+            <li><a class="lastitem">Important Team Pages</a>
+                <ul>
+                    <li><a href="DraftStrategies.html">Team Draft Strategies</a></li>
+                    <li><a href="FreeAgency.html">Free Agency Outlook</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Contact Page</h2>
+        <h3>Contact Us!</h3>
+    </section>
+    <div class="container">
+        <div class="row">
+            <form action="">
+                <div class="form-group">
+                    <label for="firstname">Name:</label>
+                    <input type="text" class="form-control" id="firstname"placeholder="Enter Name" name="firstname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter Email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="concerns">Concerns:</label>
+                    <input type="concerns" class="form-control" id="concerns"placeholder="Enter concerns" name="concerns">
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input"type="checkbox" name="subscribe"> Subscribe
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button></form>
+        </div>
+    </div>
+    </main>
+<footer class="footer page-footer font-small ">
+    <span class="text-muted">Terms Of Use  |  Privacy Statement | &copy; Tyler Cirone, 2019.</span>
+</footer>
+</body>
+</html>

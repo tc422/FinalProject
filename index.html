@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Tyler Cirone, IS117-005, Fall 2019 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Complete Broncos</title>
+    <link rel="shortcut icon" href="BroncosLogo.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Title.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="BroncosLogo.jpg" alt="Broncos Logo" height="75px"></a>
+    <h1>Complete Broncos</h1>
+    <h2>A complete guide to the Broncos world</h2>
+    <nav id="mobile_menu" class="col-12"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="ContactPage.html">Contact Page</a></li>
+            <li><a href="TeamOutlook.html">Current Team Outlook</a></li>
+            <li><a class="lastitem"> Important Team Pages</a>
+                <ul>
+                    <li><a href="DraftStrategies.html">Team Draft Strategies</a></li>
+                    <li><a href="FreeAgency.html">Free Agency Outlook</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <img src="JumbotronBroncos.jpg" alt="Team Pose" width="100%" height="50%">
+<div class="container">
+     <div class="row">
+         <div class="card" class="col-4" style="width: 33.33%;">
+             <img class="card-img-top" src="SuperBowlRing.jpg" alt="Super Bowl 50 ring">
+             <div class="card-body">
+                 <h5 class="card-title">Current Team Outlook</h5>
+                 <p class="card-text">Click on this Link to get a view of what the Current Broncos Roster looks like.</p>
+                 <a href="TeamOutlook.html" class="btn btn-primary">Click Here</a>
+             </div>
+         </div>
+         <div class="card" class="col-4" style="width: 33.33%;">
+             <img class="card-img-top" src="RingOfFame.jpg" alt="Ring of Fame">
+             <div class="card-body">
+                 <h5 class="card-title">Team Draft Strategies</h5>
+                 <p class="card-text">Click on this link to see the Broncos Draft Class. See who the Broncos targets are and what they should be focusing on. That much more on Team Draft Strategies webpage.</p>
+                 <a href="DraftStrategies.html" class="btn btn-primary">Click Here</a>
+             </div>
+         </div>
+         <div class="card" class="col-4" style="width: 33.33%;">
+             <img class="card-img-top" src="houston-texans-vs-denver-broncos.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Free Agency Outlook</h5>
+                 <p class="card-text">The Excitement builds as the Denver Broncos have turn to rookie quarterback, Drew Lock out of Missouri.The Broncos who stand at 3-8 are looking for some late season life to bring some positivity to the fans. Click Here to find out about the Broncos free agency!</p>
+                 <a href="FreeAgency.html" class="btn btn-primary">Click Here</a>
+             </div>
+         </div>
+     </div>
+</div>
+
+<footer class="footer page-footer font-small ">
+    <span class="text-muted">Terms Of Use  |  Privacy Statement | &copy; Tyler Cirone, 2019.</span>
+</footer>
+</body>
+</html>
